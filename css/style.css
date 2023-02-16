@@ -67,12 +67,11 @@ i[class^="bx"] {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-secondary);
-    border-radius: 10px;
+    background-color: var(--color-secondary);    
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
