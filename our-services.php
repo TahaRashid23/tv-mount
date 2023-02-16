@@ -12,7 +12,7 @@ include 'include/header.php'; ?>
 </section>
 
 <section class="servicesDetials">
-    <div class="container-fluid">
+    <div class="container-fluid reveal">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 offset-lg-2">
                 <div class="section-content">
@@ -39,15 +39,15 @@ include 'include/header.php'; ?>
 
 <!-- services -->
 <section class="services mar-y">
-    <div class="container">
-        <div class="serviceTitle section-content text-center wow fadeInDown">
+    <div class="container reveal">
+        <div class="serviceTitle section-content text-center">
             <h6 class="color-primary">our services</h6>
             <h4>Your Title Goes Here</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and industry's standard <br>
                 dummy text ever since the 1500s, when an unknown pris.</p>
         </div>
         <div class="row mt-5">
-            <div class="col-12 col-lg-4 wow bounceInLeft">
+            <div class="col-12 col-lg-4">
                 <div class="servicesCard num-1">
                     <div class="servicesCard-content text-right section-content">
                         <h5>Title Goes Here</h5>
@@ -71,12 +71,12 @@ include 'include/header.php'; ?>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 wow flipInX center">
+            <div class="col-12 col-lg-4">
                 <div class="services-img">
                     <img src="images/services-img.png" alt="image" class="imgFluid object-fit">
                 </div>
             </div>
-            <div class="col-12 col-lg-4 wow bounceInRight">
+            <div class="col-12 col-lg-4">
                 <div class="servicesCard servicesCard-respon num-1 num-2">
                     <div class="servicesCard-content section-content">
                         <h5>Title Goes Here</h5>
@@ -105,7 +105,7 @@ include 'include/header.php'; ?>
 </section>
 
 <!-- partner-logo -->
-<section class="partner-logo mar-y wow fadeIn">
+<section class="partner-logo mar-y reveal">
     <div class="container">
         <div class="section-content mb-5">
             <h4>Featured In</h4>

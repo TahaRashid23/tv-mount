@@ -12,7 +12,7 @@ include 'include/header.php'; ?>
 </section>
 
 <section class="ourReviews mar-y">
-    <div class="container">
+    <div class="container reveal">
         <div class="ourWork-title section-content text-center">
             <h4>See Why Customers <br> Love Tvmountinstalls</h4>
             <p class="my-5">
@@ -26,7 +26,7 @@ include 'include/header.php'; ?>
 </section>
 
 <section class="ourReviews-tv">
-    <div class="container">
+    <div class="container reveal">
         <div class="">
             <div class="row">
                 <div class="col-12 col-lg-3">
@@ -79,7 +79,7 @@ include 'include/header.php'; ?>
 </section>
 
 <section class="testimonial mar-y">
-    <div class="container">
+    <div class="container reveal">
         <div class="row testimonialSlider">
             <div class="col-12 col-lg-4">
                 <div class="testimonialCard">
@@ -190,7 +190,7 @@ include 'include/header.php'; ?>
 </section>
 
 <!-- partner-logo -->
-<section class="partner-logo mar-y wow fadeIn">
+<section class="partner-logo mar-y reveal">
     <div class="container">
         <div class="section-content mb-5">
             <h4>Featured In</h4>

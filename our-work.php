@@ -13,7 +13,7 @@ include 'include/header.php'; ?>
 
 <!-- ourWork -->
 <section class="ourWork mar-y">
-    <div class="container">
+    <div class="container reveal">
         <div class="ourWork-title section-content text-center">
             <h4>Expertly Installed, <br>
                 Flawlessly Mounted
@@ -60,7 +60,7 @@ include 'include/header.php'; ?>
 
 <!-- makingTv -->
 <section class="makingTv mar-y">
-    <div class="container">
+    <div class="container reveal">
         <div class="ourWork-title section-content text-center">
             <h4>Making Your TV The <br>Centerpiece</h4>
             <p class="my-5">
@@ -140,7 +140,7 @@ include 'include/header.php'; ?>
 </section>
 
 <!-- partner-logo -->
-<section class="partner-logo mar-y wow fadeIn">
+<section class="partner-logo mar-y reveal">
     <div class="container">
         <div class="section-content mb-5">
             <h4>Featured In</h4>

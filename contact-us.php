@@ -13,10 +13,10 @@ include 'include/header.php'; ?>
 
 <!-- contact-us -->
 <section class="contact-us mar-y tv">
-    <div class="container">
+    <div class="container reveal">
         <div class="row align-items-center">
             <div class="col-12 col-lg-5">
-                <div class="contactContent section-content wow fadeInUp">
+                <div class="contactContent section-content">
                     <h6 class="color-primary">contact us</h6>
                     <h4>Stay Connect <br>
                         With Us</h4>
@@ -36,7 +36,7 @@ include 'include/header.php'; ?>
                 </div>
             </div>
             <div class="col-12 col-lg-7">
-                <div class="contactForm-bg banner-bg section-content wow fadeInDown">
+                <div class="contactForm-bg banner-bg section-content">
                     <h4 class="color-white">Contact Us</h4>
                     <form action="#" class="contactUs-form">
                         <div class="row">
@@ -80,7 +80,7 @@ include 'include/header.php'; ?>
 
 <!-- frequently -->
 <section class="frequently mar-y mt-5">
-    <div class="container">
+    <div class="container reveal">
         <div class="frequently-title section-content text-center mb-5">
             <h4>Frequently Asked Question  (FAQ)</h4>
         </div>
@@ -192,7 +192,7 @@ include 'include/header.php'; ?>
 </section>
 
 <!-- partner-logo -->
-<section class="partner-logo mar-y wow fadeIn">
+<section class="partner-logo mar-y reveal">
     <div class="container">
         <div class="section-content mb-5">
             <h4>Featured In</h4>

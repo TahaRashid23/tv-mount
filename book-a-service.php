@@ -12,7 +12,7 @@ include 'include/header.php'; ?>
 </section>
 
 <!-- bookService -->
-<section class="bookService mar-y">
+<section class="bookService mar-y reveal">
     <div class="container">
         <div class="bookService-title section-content text-center mb-5">
             <h4>Your Title Goes To Here</h4>

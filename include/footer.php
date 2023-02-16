@@ -1,5 +1,5 @@
 <!-- footer -->
-<footer class="footer banner-bg">
+<footer class="footer banner-bg reveal">
     <div class="container">
         <div class="row">
             <div class="col-12">

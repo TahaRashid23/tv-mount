@@ -13,9 +13,9 @@ include 'include/header.php'; ?>
 
 <!-- about-us -->
 <section class="about-us mar-y">
-    <div class="container">
+    <div class="container reveal">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-5 wow bounceInLeft">
+            <div class="col-12 col-lg-5 ">
                 <div class="aboutContent section-content">
                     <h6 class="color-primary">About Us</h6>
                     <h4>Your Title Here</h4>
@@ -34,7 +34,7 @@ include 'include/header.php'; ?>
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-lg-7 wow bounceInRight">
+            <div class="col-12 col-lg-7">
                 <div class="aboutImg">
                     <img src="images/aboutUs-img.png" alt="image" class="imgFluid object-fit">
                 </div>
