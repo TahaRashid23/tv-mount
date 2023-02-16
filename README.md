@@ -1,2 +1,1 @@
-# tv-mount
-website
+# tv-mount.github.io
