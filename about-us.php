@@ -2,6 +2,7 @@
 <?php $title = "About Us";
 include 'include/header.php'; ?>
 
+<main>
 <!-- aboutBanner -->
 <section class="aboutBanner innerBanner banner-bg">
     <div class="container">

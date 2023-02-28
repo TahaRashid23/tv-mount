@@ -75,8 +75,7 @@ i[class^="bx"] {
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;    
 }
 
 h1,
@@ -411,19 +410,16 @@ h5 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
-}
-
-.banner__content .color-primary {
     position: relative;
 }
 
-.banner__content .color-primary::before {
+.banner__content h2::after {
     content: "";
     width: 474px;
     height: 80px;
     position: absolute;
     top: -4px;
-    right: -8px;
+    left: -14.5%;
     background-color: #fff;
     z-index: -1;
 }
@@ -695,6 +691,7 @@ h5 {
     background-image: url("../images/contactForm-bg.png");
     min-height: 81vh;
     padding: 3rem 3.25rem;
+    background-size: 100% 100%;
 }
 
 .contactUs-input :is(input, textarea) {
@@ -731,7 +728,7 @@ h5 {
 /* footer */
 .footer {
     background-image: url("../images/footer-bg.png");
-    min-height: 78vh;
+    min-height: 80vh;
     padding-top: 10rem;
     text-align: center;
 }
@@ -1094,7 +1091,7 @@ h5 {
     .headerSub-btn-none,
     .header-main__logo a::before,
     .main-banner,
-    .banner__content .color-primary::before,
+    .banner__content h2::after,
     .bannerSlider-none,
     .bannerSlider .slick-dots {
         display: none !important;
@@ -1223,6 +1220,19 @@ h5 {
         padding-right: 0;
         border: none;
     }
+
+    .downTo {        
+        bottom: 0;
+        top: 80%;        
+    }
+
+    .card-header {     
+        padding: 1rem 1.5rem;        
+    }
+
+    .card-body {     
+        padding: 1rem 1.5rem;        
+    }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -1328,22 +1338,35 @@ h5 {
     .footer {
         min-height: 45vh;
     }
+
+    .card-header {     
+        padding: 1rem 1.5rem;        
+    }
+
+    .card-body {     
+        padding: 1rem 1.5rem;        
+    }
 }
 
 @media only screen and (max-width: 1066.67px) {}
 
-.reveal {
+/* .reveal {
     position: relative;
     transform: translateY(180px);
-    opacity: 0;
-    transition: 3s all ease;
+    display: none;
+    animation: fas;
 }
 
 .reveal.active {
     transform: translateY(0);
-    opacity: 1;
-}
+    display: block;
+} */
 
 .bannerMob-none {
     display: none;
 }
+
+/* .visi_none {
+    visibility: hidden !important;
+    display: no;
+} */
