@@ -1,5 +1,6 @@
 // Initialize Wow
-new WOW().init();
+// new WOW().init();
+
 
 // Banner Slider
 $(".bannerSlider").slick({
@@ -47,6 +48,42 @@ $('.testimonialSlider').slick({
     }
   ]
 });
+// partnerLogo-slider
+$('.partnerSlider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  arrows: false,
+  dots: false,
+  responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }
+  ]
+});
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
@@ -56,59 +93,52 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+const interleaveOffset = 0.75;
 
-// function reveal() {
-//   var reveals = document.querySelectorAll(".reveal");
+var swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  speed: 800,
+  mousewheelControl: true,
+  watchSlidesProgress: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: false,
+    type: 'bullets',
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + ('0' + (index + 1)) + '</span>';
+    }
+  },
+  on: {
+    progress: function () {
+      console.log('test')
+      let swiper = this;
 
-//   for (var i = 0; i < reveals.length; i++) {
-//     var windowHeight = window.innerHeight;
-//     var elementTop = reveals[i].getBoundingClientRect().top;
-//     var elementVisible = 150;
+      for (let i = 0; i < swiper.slides.length; i++) {
+        let slideProgress = swiper.slides[i].progress;
+        let innerOffset = swiper.height * interleaveOffset;
+        let innerTranslate = slideProgress * innerOffset;
 
-//     if (elementTop < windowHeight - elementVisible) {
-//       reveals[i].classList.add("active");
-//     } else {
-//       reveals[i].classList.remove("active");
-//     }
-//   }
-// }
-
-// window.addEventListener("scroll", reveal);
-
-// let page = 0;
-// let limit = Math.max(document.body.scrollHeight, document.body.offsetHeight,
-//   document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-// let vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-// let done = Math.round(limit / vh) - 1;
-
-// let clock = 0;
-// window.onwheel = function () {
-//   //console.log(clock);
-//   if (clock == 0) {
-//     clock = 1;
-
-//     let pos = event.deltaY;
-//     let scroll = 0;
-//     //console.log(event.deltaY);
-//     //console.log(scroll);
-//     let go = (event.deltaY < 0) ? -1 : +1;
-//     page = page + go;
-//     if (page < 0) page = 0;
-//     if (page > done) page = done;
-//     //console.log(page);
-
-//     $('html, body').animate({
-//       scrollTop: vh * page
-//     });
-//     setTimeout(function () {
-//       clock = 0
-//     }, 1000);
-
-//   }
-// }
+        TweenMax.set(swiper.slides[i].querySelector(".slide-inner"), {
+          y: innerTranslate,
+        });
+      }
+    },
+    setTransition: function (slider, speed) {
+      let swiper = this;
+      for (let i = 0; i < swiper.slides.length; i++) {
+        swiper.slides[i].style.transition = speed + "ms";
+        swiper.slides[i].querySelector(".slide-inner").style.transition =
+          speed + "ms";
+      }
+    }
+  }
+});
 
 
-// // loader
+// loader
 const fade = () => {
   const wrapper =
     document.querySelector('.wrapper');
@@ -119,4 +149,3 @@ window.addEventListener('load', fade);
 // year
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
-
