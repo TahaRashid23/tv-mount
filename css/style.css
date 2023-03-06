@@ -211,7 +211,7 @@ h5 {
 .section-content h5 {
     text-transform: capitalize;
     color: #292828;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -697,10 +697,11 @@ h5 {
 }
 
 .contactForm-bg {
-    background-image: url("../images/contactForm-bg.png");
-    min-height: 81vh;
+    background-image: url("../images/contactForm-bg.png");    
     padding: 3rem 3.25rem;
     background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .contactUs-input :is(input, textarea) {
@@ -737,10 +738,11 @@ h5 {
 /* footer */
 .footer {
     background-image: url("../images/footer-bg.png");
-    min-height: 69vh;
-    padding-top: 10.5rem;
+    padding-top: 9rem;
     text-align: center;
-    margin: 35px 0 0;
+    margin: 30px 0 0;
+    width: 100%;
+    height: auto;
 }
 
 .footer-logo a {
@@ -830,7 +832,7 @@ h5 {
 }
 
 .ourWork-title {
-    margin-bottom: 4.5rem !important;
+    margin-bottom: 0.5rem !important;
 }
 
 .ourWork-card {
@@ -843,15 +845,15 @@ h5 {
 }
 
 .ourwork-Content h5 {
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
 }
 
 .ourwork-Content p {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .makingTv {
-    margin: 7.5rem 0 !important;
+    margin: 2.5rem 0 !important;
 }
 
 .makingTv-cardImg {
@@ -870,15 +872,16 @@ h5 {
 
 .ourReviews-tv {
     position: relative;
+    margin-top: 3rem;
 }
 
 .ourReviews-tv::before {
     content: "";
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #ccc;
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
 }
 
@@ -1075,7 +1078,7 @@ h5 {
 }
 
 .header-menu li i {
-    font-size: 2.5rem;
+    font-size: 32px;
     color: #fff;
 }
 
@@ -1095,7 +1098,7 @@ h5 {
 }
 
 
-@media only screen and (max-width:575.98px) {
+@media only screen and (min-width: 300px) and (max-width: 519px) {
 
     .header-main__nav-none,
     .headerSub-btn-none,
@@ -1104,9 +1107,10 @@ h5 {
     .banner__content h2::after,
     .bannerSlider-none,
     .bannerSlider .slick-dots,
-    .gallery-card-none {
+    .gallery-card-none,
+    .themeBtn span {
         display: none !important;
-    }
+    }    
 
     .header-menu,
     .header-main__navresponsive,
@@ -1121,6 +1125,28 @@ h5 {
     .bannerMob-none,
     .cardNone {
         display: block !important;
+    }
+
+    .section-content p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .section-content h5 {
+        font-size: 14px;
+    }
+
+    .section-content h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .section-content h6 {
+        font-size: 10px;
+    }
+
+    .section-content h6::after {     
+        top: 0px;        
     }
 
     .header {
@@ -1138,14 +1164,14 @@ h5 {
     }
 
     .header-main__logo {
-        height: 66px !important;
+        height: 48px !important;
     }
 
     .banner__img img {
         margin-top: -10px;
         z-index: -1;
         position: relative;
-        height: 94vh;
+        height: 106vh;
     }
 
     .banner__content {
@@ -1154,18 +1180,20 @@ h5 {
     }
 
     .banner__content h1 {
-        font-size: 2.25rem;
+        font-size: 40px !important;
+        margin-bottom: 4px;
     }
 
     .banner__content h2 {
-        font-size: 1.5rem !important;
+        font-size: 28px !important;
         margin-bottom: 0 !important;
     }
 
-    .bannerSlider .slick-dots {
-        bottom: 140px !important;
-        padding-left: 8.8rem !important;
-    }
+    .banner__content p {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 20px 0;
+    }    
 
     .aboutContent {
         margin-bottom: 3rem;
@@ -1212,12 +1240,15 @@ h5 {
     }
 
     .contactForm-bg {
-        padding: 1.5rem 1.25rem !important;
-        min-height: 50vh;
+        padding: 1.5rem 1.25rem !important;        
     }
 
     .footer {
-        padding-top: 8rem !important;
+        background: linear-gradient(90deg, #00428A -11.35%, #208aff 107.21%);
+        animation: anim 2.5s infinite ease-in-out;
+        background-size: 400% 400%;
+        padding-top: 2rem;
+        height: auto;
     }
 
     .footer-logo a {
@@ -1240,7 +1271,666 @@ h5 {
 
     .downTo {
         bottom: 0;
-        top: 68%;
+        top: 85%;
+    }    
+
+    .galleryImg img {
+        height: 150px;
+    }
+
+    .footer-info {
+        margin-top: 2.2rem;
+    }
+
+    .footer-main__nav {
+        margin-top: 1.2rem;
+    }
+
+    .footer-main p {
+        font-size: 11px;
+    }
+
+    .partnerLogo-img ul {
+        display: block !important;
+    }
+
+    .serviceCard-mbl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .services-img img {
+        width: 150px;
+        margin: 12px auto;
+    }
+
+    .servicesCard-content p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .themeBtn {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .servicesCard {
+        margin-bottom: 0;
+        width: 49%;
+    }
+
+    .swiper-container .slider .swiper-services .slide-inner {
+    padding-top: 50px !important;
+    }
+
+    .swiper-container .slider .swpier-about .slide-inner,
+    .swiper-container .slider .swiper-contact .slide-inner {
+        padding-top: 60px;
+    }
+
+    .partnerLogo-img img {
+        height: 50px;
+    }
+
+    .contactContent h4 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .contactContent p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 9px !important;
+    }
+
+    .contactInfo a {
+        margin-bottom: 10px;
+    }
+
+    .contactForm-bg h4 {
+        font-size: 24px;
+    }
+
+    .contactUs-input :is(input, textarea) {
+        margin-bottom: 8px;
+        padding: 4px 10px;
+    }
+
+    .contactUs-input textarea {
+        height: 60px;
+    }
+
+    .courses-card__img .playBtn::after {
+        width: 25px;
+        height: 25px;     
+    }
+
+    .courses-card__img .playBtn::before, .courses-card__img .playBtn::after {        
+        width: 30px;
+        height: 30px;        
+    }
+
+    .courses-card__img .playBtn, .courses-card__img .playBtn::before, .courses-card__img .playBtn::after {
+        width: 45px;
+        height: 45px;        
+        font-size: 24px;        
+    }
+
+    .contactUs-input .themeBtn {
+        padding: 8px 15px;     
+        font-size: 12px;
+    }
+
+    ul.contactInfo {
+        margin-top: 0px !important;
+    }
+
+    .footerCopy-right {
+        border-top: 1px solid #ffffff;     
+    }
+
+    .services-screen img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .innerBanner-title h2 {
+        font-size: 2.25rem;
+    }
+
+    .makingTv-card {
+        height: 100% !important;
+        width: 100%;
+    }
+
+    .ourWork-title h4 {
+        font-size: 22px !important;     
+    }
+
+    .ourwork-Content p {
+        margin-bottom: 14px;
+    }
+
+    .ourWork-cardContent {
+        padding: 14px;
+    }
+
+    .card-header {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .card-body {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 10px;
+    }    
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+
+    .header-main__nav-none,
+    .headerSub-btn-none,
+    .header-main__logo a::before,    
+    .banner__content h2::after,
+    .bannerSlider-none,
+    .bannerSlider .slick-dots,
+    .gallery-card-none,
+    .themeBtn span {
+        display: none !important;
+    }    
+
+    .header-menu,
+    .header-main__navresponsive,
+    .headerSub-btn-responsive,
+    .footer-main__nav {
+        display: block;
+    }
+
+    .footer-info,    
+    .bookService-help ul,
+    .bannerMob-none,
+    .cardNone {
+        display: block !important;
+    }
+
+    .section-content p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .section-content h5 {
+        font-size: 17px;
+    }
+
+    .section-content h4 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .section-content h6 {
+        font-size: 18px;
+    }
+
+    .section-content h6::after {
+        top: 5px;
+    }
+
+    .header {
+        background: linear-gradient(90deg, #00428A -11.35%, #208AFF 107.21%);
+        animation: anim 2.5s infinite ease-in-out;
+        background-size: 400% 400%;
+    }
+
+    .header-sideNav-logo a {
+        font-size: 2rem !important;
+    }
+
+    .header-main {
+        justify-content: space-between;
+    }
+
+    .header-main__logo {
+        height: 68px !important;
+    }
+
+    .banner__img img {
+        z-index: -1;
+        position: relative;
+    }
+
+    .banner__content {
+        left: 50%;
+        max-width: 80%;
+    }
+
+    .banner__content h1 {
+        font-size: 46px !important;
+        margin-bottom: 11px;
+    }
+
+    .banner__content h2 {
+        font-size: 36px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .banner__content p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0;
+    }    
+
+    .aboutContent {
+        margin-bottom: 3rem;
+    }
+
+    .introducing {
+        background-image: url("../images/introducing-bg-mbl.png");
+        min-height: 64vh !important;
+        background-size: cover;
+    }
+
+    .tv::before {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        top: -50% !important;
+    }
+
+    .servicesCard-content,
+    .introducingContent,
+    .aboutContent,
+    .banner__content {
+        text-align: center !important;
+    }
+
+    .servicesCard-content .themeBtn,
+    .introducingContent .themeBtn,
+    .aboutContent .themeBtn,
+    .banner__content .themeBtn {
+        display: inline-block;
+    }
+
+    .num-1::before {
+        left: 38% !important;
+    }
+
+    .galleryImg {
+        margin-left: 1rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .swiper-container .slider .swiper-services .slide-inner {
+        padding-top: 0 !important;
+    }
+
+    .contactForm-bg {
+        padding: 1rem 1.5rem !important;        
+    }
+
+    .footer {
+        padding-top: 4rem;
+    }
+
+    .footer-logo a {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .bookService-help,
+    .services-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookService-help li:nth-child(1),
+    .bookService-help li a {
+        padding-right: 0;
+        border: none;
+    }
+
+    .downTo {
+        bottom: 0;
+        top: 85%;
+    }
+
+    .card-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .card-body {
+        padding: 1rem 1.5rem;
+    }
+
+    .galleryImg img {
+        height: 150px;
+    }
+
+    .footer-info {
+        margin-top: 2.2rem;
+    }
+
+    .footer-main__nav {
+        margin-top: 1.2rem;
+    }
+
+    .footer-main p {
+        font-size: 11px;
+    }
+
+    .partnerLogo-img ul {
+        display: block !important;
+    }
+
+    .serviceCard-mbl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .services-img img {
+        width: 200px;
+        margin: 12px auto;
+    }
+
+    .servicesCard-content p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .themeBtn {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .servicesCard {
+        margin-bottom: 0;
+        width: 49%;
+    }
+
+    .swiper-container .slider .swiper-services .slide-inner {
+    padding-top: 50px !important;
+    }
+
+    .swiper-container .slider .swpier-about .slide-inner,
+    .swiper-container .slider .swiper-contact .slide-inner {
+        padding-top: 60px;
+    }
+
+    .partnerLogo-img img {
+        height: 50px;
+    }
+
+    .contactContent h4 {
+        font-size: 24px;
+        margin-bottom: 7px;
+    }
+
+    .contactContent p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 12px !important;
+    }
+
+    .contactInfo a {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .contactForm-bg h4 {
+        font-size: 24px;
+    }
+
+    .contactUs-input :is(input, textarea) {
+        margin-bottom: 8px;
+        padding: 7px 16px;
+    }
+
+    .contactUs-input textarea {
+        height: 80px;
+    }
+
+    .courses-card__img .playBtn::after {
+        width: 25px;
+        height: 25px;     
+    }
+
+    .courses-card__img .playBtn::before, .courses-card__img .playBtn::after {        
+        width: 30px;
+        height: 30px;        
+    }
+
+    .courses-card__img .playBtn, .courses-card__img .playBtn::before, .courses-card__img .playBtn::after {
+        width: 45px;
+        height: 45px;        
+        font-size: 24px;        
+    }
+
+    .contactUs-input .themeBtn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    ul.contactInfo {
+        margin-top: 0px !important;
+    }
+
+    .partner-loo {
+        margin-top: 2rem;
+    }
+
+    .aboutImg img {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .services-screen img {
+        width: 65%;
+        display: block;
+        margin: 0 auto;
+    }   
+
+    .makingTv-card {
+        height: 180px !important;
+    }
+
+    .ourWork-title h4 {
+        font-size: 24px !important;     
+    }
+
+    .ourwork-Content p {
+        margin-bottom: 1rem;
+    }
+
+    .ourWork-cardContent {
+        padding: 14px;
+    }
+
+    .card-header {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .card-body {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 10px;
+    }   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-main__nav-none,
+    .headerSub-btn-none,
+    .header-main__logo a::before,
+    .banner__content h2::after,
+    .bannerSlider-none,
+    .bannerSlider .slick-dots,
+    .gallery-card-none,
+    .themeBtn span {
+        display: none !important;
+    }    
+
+    .header-menu,
+    .header-main__navresponsive,
+    .headerSub-btn-responsive,
+    .footer-main__nav {
+        display: block;
+    }
+
+    .footer-info,    
+    .bookService-help ul,
+    .bannerMob-none,
+    .cardNone {
+        display: block !important;
+    }
+
+    .section-content p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .section-content h5 {
+        font-size: 22px;
+    }
+
+    .section-content h4 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .section-content h6 {
+        font-size: 18px;
+    }
+
+    .section-content h6::after {
+        top: 5px;
+    }
+
+    .header {
+        background: linear-gradient(90deg, #00428A -11.35%, #208AFF 107.21%);
+        animation: anim 2.5s infinite ease-in-out;
+        background-size: 400% 400%;
+    }
+
+    .header-sideNav-logo a {
+        font-size: 2rem !important;
+    }
+
+    .header-main {
+        justify-content: space-between;
+    }
+
+    .header-main__logo {
+        height: 68px !important;
+    }
+
+    .banner__img img {
+        z-index: -1;
+        position: relative;
+        height: 100vh;
+    }
+
+    .banner__content {
+        left: 50%;
+        max-width: 80%;
+    }
+
+    .banner__content h1 {
+        font-size: 50px !important;
+        margin-bottom: 11px;
+    }
+
+    .banner__content h2 {
+        font-size: 44px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .banner__content p {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 20px 0;
+    }    
+
+    .aboutContent {
+        margin-bottom: 3rem;
+    }
+
+    .introducing {
+        background-image: url("../images/introducing-bg-mbl.png");
+        min-height: 64vh !important;
+        background-size: cover;
+    }
+
+    .tv::before {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        top: -50% !important;
+    }
+
+    .servicesCard-content,
+    .introducingContent,
+    .aboutContent,
+    .banner__content,
+    .servicesDetials .section-content {
+        text-align: center !important;
+    }
+
+    .servicesCard-content .themeBtn,
+    .introducingContent .themeBtn,
+    .aboutContent .themeBtn,
+    .banner__content .themeBtn,
+    .servicesDetials .themeBtn {
+        display: inline-block;
+    }
+
+    .num-1::before {
+        left: 38% !important;
+    }
+
+    .galleryImg {
+        margin-left: 1rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .swiper-container .slider .swiper-services .slide-inner {
+        padding-top: 0 !important;
+    }
+
+    .contactForm-bg {
+        padding: 2.5rem 1.5rem !important;        
+    }
+
+    .footer {
+        padding-top: 4rem;
+        height: auto;
+    }
+
+    .footer-logo a {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .bookService-help,
+    .services-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookService-help li:nth-child(1),
+    .bookService-help li a {
+        padding-right: 0;
+        border: none;
+    }
+
+    .downTo {
+        bottom: 0;
+        top: 85%;
     }
 
     .card-header {
@@ -1283,14 +1973,13 @@ h5 {
     }
 
     .servicesCard-content p {
-        font-size: 11px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    .servicesCard-content a {
-        padding: 10px 0;
-        width: 100%;
-        font-size: 14px;
+    .themeBtn {
+        padding: 16px 32px;
+        font-size: 16px;
     }
 
     .servicesCard {
@@ -1299,33 +1988,32 @@ h5 {
     }
 
     .swiper-container .slider .swiper-services .slide-inner {
-        align-items: start !important;
-        margin: 100px 0 0;
+    padding-top: 50px !important;
     }
 
     .swiper-container .slider .swpier-about .slide-inner,
-    .swiper-container .slider .swiper-contact .slide-inner,
-    .swiper-container .slider .swiper-footer .slide-inner {
+    .swiper-container .slider .swiper-contact .slide-inner {
         padding-top: 60px;
     }
 
     .partnerLogo-img img {
-        height: 78px;
+        height: 50px;
     }
 
     .contactContent h4 {
-        font-size: 24px;
-        margin-bottom: 4px;
+        font-size: 28px;
+        margin-bottom: 10px;
     }
 
     .contactContent p {
-        font-size: 12px;
-        line-height: 16px;
-        margin-bottom: 8px !important;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 12px !important;
     }
 
     .contactInfo a {
-        margin-bottom: 10px;
+        margin-bottom: 16px;
+        font-size: 20px;
     }
 
     .contactForm-bg h4 {
@@ -1333,27 +2021,73 @@ h5 {
     }
 
     .contactUs-input :is(input, textarea) {
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        padding: 12px 16px;
     }
 
     .contactUs-input textarea {
         height: 100px;
-        overflow: hidden;
     }
+
+    .courses-card__img .playBtn::after {
+        width: 25px;
+        height: 25px;     
+    }
+
+    .courses-card__img .playBtn::before, .courses-card__img .playBtn::after {        
+        width: 30px;
+        height: 30px;        
+    }
+
+    .courses-card__img .playBtn, .courses-card__img .playBtn::before, .courses-card__img .playBtn::after {
+        width: 45px;
+        height: 45px;        
+        font-size: 24px;        
+    }
+
+    .contactUs-input .themeBtn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    ul.contactInfo {
+        margin-top: 0px !important;
+    }
+
+    .partner-loo {
+        margin-top: 4rem;
+    }
+
+    .aboutImg img {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .services-screen img {
+        width: 65%;
+        display: block;
+        margin: 0 auto;
+    }   
 }
 
-@media only screen and (max-width: 991.98px) {
-
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-main__nav-none,
     .headerSub-btn-none,
-    .header-main__logo a::before {
+    .header-main__logo a::before,    
+    .bannerSlider .slick-dots{
         display: none !important;
-    }
+    }    
 
     .header-menu,
     .header-main__navresponsive,
-    .headerSub-btn-responsive {
+    .headerSub-btn-responsive{
         display: block;
+    } 
+    
+    .banner__content h2::after {     
+        width: 418px;        
+        left: -14.6%;        
     }
 
     .header {
@@ -1361,97 +2095,85 @@ h5 {
         animation: anim 2.5s infinite ease-in-out;
         background-size: 400% 400%;
     }
-
-    .header-sideNav-logo a {
-        font-size: 3rem;
-    }
+    
 
     .header-main {
         justify-content: space-between;
     }
-
-    .header-main__logo {
-        height: 76px;
+    .partner-loo {
+        margin-top: 2rem;
     }
 
-    .banner__img img {
-        min-height: 52vh;
+    .footer-logo a {
+        font-size: 1.85rem;     
+        margin-bottom: 0.5rem;
     }
 
-    .banner__content {
-        max-width: 80%;
-    }
-
-    .banner__content h1,
-    .banner__content h2 {
-        font-size: 2.5rem;
-    }
-
-    .banner__content .color-primary::before {
-        width: 246px;
-        height: 58px;
-        right: -4px;
-    }
-
-    .bannerSlider .slick-dots {
-        bottom: 146px;
-        padding-left: 1.25rem;
-    }
-
-    .servicesCard-content,
-    .introducingContent,
-    .aboutContent {
-        text-align: center !important;
-    }
-
-    .servicesCard-content .themeBtn,
-    .introducingContent .themeBtn,
-    .aboutContent .themeBtn {
-        display: inline-block;
-    }
-
-    .num-1::before {
-        left: 42%;
-    }
-
-    .aboutContent {
-        margin-bottom: 3rem;
-    }
-
-    .introducing {
-        background-image: url("../images/introducing-bg-mbl.png");
-        min-height: 30vh;
-    }
-
-    .galleryImg {
-        margin-left: 1rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .contact-us.tv::before,
-    .tv::before {
-        top: -14%;
-    }
-
-    .contactForm-bg {
-        min-height: 50vh;
-        padding: 2rem 2.25rem;
+    .footer-info {
+        margin-top: 1.8rem;     
     }
 
     .footer {
-        min-height: 45vh;
+        padding-top: 4rem;
+    }
+
+    .footer-main__nav {
+        margin-top: 0.5rem;
+    }
+
+    .header-main__logo {
+        height: 56px;     
+    }
+
+    .section-content p {
+        font-size: 11px;
+    }
+
+    .section-content h4 {
+        font-size: 32px;     
+        margin-bottom: 8px;
+    }
+
+    .section-content h6 {
+        font-size: 14px;     
+    }
+
+    .ourWork-title h4 {
+        font-size: 30px !important;        
+        margin-bottom: 0px;
+    }
+
+    .makingTv {
+        margin: 1.5rem 0 !important;
+    }
+    .makingTv-cardImg .makingTv-cardContent {
+        top: 32%;
+    }
+
+    .makingTv-card {
+        height: 200px !important;
+    }
+
+    .swiper-container .slider .swiper-contact .slide-inner {
+        margin-top: 1rem;
+    }
+
+    .contactForm-bg {
+        padding: 2rem;
     }
 
     .card-header {
-        padding: 1rem 1.5rem;
+        font-size: 16px;
+        padding: 12px;
     }
 
     .card-body {
-        padding: 1rem 1.5rem;
-    }
+        font-size: 14px;
+        line-height: 24px;
+        padding: 12px;
+    } 
 }
 
-@media only screen and (max-width: 1066.67px) {}
 .bannerMob-none {
     display: none;
 }
@@ -1488,7 +2210,8 @@ h5 {
 }
 
 .swiper-container .slider .swiper-services .slide-inner,
-.swiper-container .slider .swpier-gallery .slide-inner {
+.swiper-container .slider .swpier-gallery .slide-inner,
+.swiper-container .slider .swiper-footer .slide-inner {
     padding-top: 60px;
 }
 
@@ -1500,3 +2223,26 @@ h5 {
 .gallery .mt-5 {
     margin-top: 0.5rem !important;
 }
+
+.ourWork-title h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.makingTv-card {
+    height: 276px;
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 7368px) {}
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1445px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 1366px) and (max-width: 1444px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}

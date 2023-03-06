@@ -1,7 +1,3 @@
-// Initialize Wow
-// new WOW().init();
-
-
 // Banner Slider
 $(".bannerSlider").slick({
   infinite: true,
@@ -85,6 +81,43 @@ $('.partnerSlider').slick({
   ]
 });
 
+// partnerLogo-slider
+$('.tvSlider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
+  dots: false,
+  responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }
+  ]
+});
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
@@ -138,13 +171,13 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// loader
-const fade = () => {
-  const wrapper =
-    document.querySelector('.wrapper');
-  wrapper.classList.add('fade');
-};
-window.addEventListener('load', fade);
+// // loader
+// const fade = () => {
+//   const wrapper =
+//     document.querySelector('.wrapper');
+//   wrapper.classList.add('fade');
+// };
+// window.addEventListener('load', fade);
 
 // year
 const year = document.getElementById("year");

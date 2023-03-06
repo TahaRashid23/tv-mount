@@ -11,9 +11,9 @@
 
 <body>
     <!-- loader -->
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="loader"></div>
-    </div>    
+    </div>     -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="header-main__logo text-center py-4">

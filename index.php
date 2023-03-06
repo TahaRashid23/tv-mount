@@ -31,7 +31,7 @@ include 'include/header.php'; ?>
                                 </a>
                             </div>
                             <div class="downTo responsiveDownto">
-                                <a href="#aboutUs"><i class="fa-solid fa-arrow-down"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-down"></i></a>
                             </div>
                         </div>
                         <div class="banner ">
@@ -57,7 +57,7 @@ include 'include/header.php'; ?>
                                 </a>
                             </div>
                             <div class="downTo responsiveDownto">
-                                <a href="#aboutUs"><i class="fa-solid fa-arrow-down"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-down"></i></a>
                             </div>
                         </div>
                         <div class="banner">
@@ -83,7 +83,7 @@ include 'include/header.php'; ?>
                                 </a>
                             </div>
                             <div class="downTo responsiveDownto">
-                                <a href="#aboutUs"><i class="fa-solid fa-arrow-down"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-down"></i></a>
                             </div>
                         </div>
                         <div class="banner">
@@ -109,7 +109,7 @@ include 'include/header.php'; ?>
                                 </a>
                             </div>
                             <div class="downTo responsiveDownto">
-                                <a href="#aboutUs"><i class="fa-solid fa-arrow-down"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-down"></i></a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@ include 'include/header.php'; ?>
                             </a>
                         </div>
                         <div class="downTo responsiveDownto">
-                            <a href="#aboutUs"><i class="fa-solid fa-arrow-down"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -429,17 +429,17 @@ include 'include/header.php'; ?>
             <!-- footer -->
             <div class="swiper-slide swiper-footer">
                 <div class="slide-inner d-block" id="output">
-                    <section class="partner-loo mar-y reveal" style="padding: 40px 0 0;">
+                    <section class="partner-loo mar-y reveal">
                         <div class="container">
                             <div class="partnerLogo-img">
                                 <ul class="d-flex align-items-center justify-content-center partnerSlider">
-                                    <li><img src="images/partnerLogo-img1.png" alt="image" class="imgFluid object-fit">
+                                    <li><img src="images/partnerLogo-img1.PNG" alt="image" class="imgFluid object-fit">
                                     </li>
-                                    <li><img src="images/partnerLogo-img2.png" alt="image" class="imgFluid object-fit">
+                                    <li><img src="images/partnerLogo-img2.PNG" alt="image" class="imgFluid object-fit">
                                     </li>
-                                    <li><img src="images/partnerLogo-img3.png" alt="image" class="imgFluid object-fit">
+                                    <li><img src="images/partnerLogo-img3.PNG" alt="image" class="imgFluid object-fit">
                                     </li>
-                                    <li><img src="images/partnerLogo-img2.png" alt="image" class="imgFluid object-fit">
+                                    <li><img src="images/partnerLogo-img2.PNG" alt="image" class="imgFluid object-fit">
                                     </li>
                                 </ul>
                             </div>
